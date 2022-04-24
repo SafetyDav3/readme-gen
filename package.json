@@ -1,0 +1,22 @@
+{
+  "name": "potential-enigma",
+  "version": "1.0.0",
+  "description": "[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) # readme-gen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SafteyDav3/readme-gen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SafteyDav3/readme-gen/issues"
+  },
+  "homepage": "https://github.com/SafteyDav3/readme-gen#readme",
+  "dependencies": {
+    "inquirer": "^8.2.2"
+  }
+}
