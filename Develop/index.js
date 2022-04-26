@@ -21,12 +21,6 @@ const questionsArr = [
     message: "What packages are required to install and run this program?: ",
   },
   {
-    type: "confirm",
-    name: "morePacks",
-    message: "Would you like to enter another required package?: ",
-    default: false,
-  },
-  {
     type: "input",
     name: "useCase",
     message: "Describe a use case(s) where this project would be helpful: ",
@@ -49,21 +43,9 @@ const questionsArr = [
     ],
   },
   {
-    type: "confirm",
-    name: "contributorsBoo",
-    message: "Would you like to cite any contributors to this project?: ",
-    default: false,
-  },
-  {
     type: "input",
     name: "contributorName",
-    message: "Enter the Github name of the contributor: ",
-  },
-  {
-    type: "confirm",
-    name: "contributorPlusBoo",
-    message: "Would you like to add another contributor?: ",
-    default: false,
+    message: "Enter any Github contributor user names: ",
   },
 ];
 
