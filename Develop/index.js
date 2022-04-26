@@ -22,6 +22,11 @@ const questionsArr = [
   },
   {
     type: "input",
+    name: "installProcess",
+    message: "Please describe the install process for this program: "
+  },
+  {
+    type: "input",
     name: "useCase",
     message: "Describe a use case(s) where this project would be helpful: ",
   },
