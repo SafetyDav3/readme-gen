@@ -1,7 +1,11 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const Choices = require("inquirer/lib/objects/choices");
-const prompt = inquirer.createPromptModule();
+
+const fs = require("fs");
+// const prompt = inquirer.createPromptModule();
+
+const readmeTemplate = require("./utils/readme-template");
 
 // TODO: Create an array of questions for user input
 const questionsArr = [
@@ -9,6 +13,11 @@ const questionsArr = [
     type: "input",
     name: "projectTitle",
     message: "What is the title of your project?: ",
+  },
+  {
+    type: "input",
+    name: "descriptionTitle",
+    message: "How would you like to title the description?: ",
   },
   {
     type: "input",
@@ -23,7 +32,7 @@ const questionsArr = [
   {
     type: "input",
     name: "installProcess",
-    message: "Please describe the install process for this program: "
+    message: "Please describe the install process for this program: ",
   },
   {
     type: "input",
@@ -59,9 +68,12 @@ function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {
-  prompt(questionsArr).then(function (answers) {
-    console.log(answers);
-  });
+ inquirer.prompt(questionsArr).then(function (answers){
+  //  console.log(answers);
+  const readmeString = readmeTemplate(answers);
+  console.log(readmeString)
+
+ });
 }
 
 // Function call to initialize app

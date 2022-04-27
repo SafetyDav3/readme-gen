@@ -1,20 +1,15 @@
-const readmeTemplate = function (answersArr, err) {
-
-      if (!err) {
-          return `
+const readmeTemplate = function (answers) {
+  return `
           
-          # ${answersArr.projectTitle}
+          # ${answers.projectTitle}
 
-          ## ${answersArr.descriptionTitle}
+          ## ${answers.descriptionTitle}
           
           
           
           `;
-      }
-      
-      
-      
-      
-      
-      
-  };
+};
+
+// readmeTemplate(answers);
+
+module.exports = readmeTemplate
