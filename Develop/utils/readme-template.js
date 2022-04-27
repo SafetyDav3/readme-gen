@@ -1,12 +1,26 @@
 const readmeTemplate = function (answers) {
   return `
           
-          # ${answers.projectTitle}
+# ${answers.projectTitle}
 
-          ## ${answers.descriptionTitle}
-          
-          
-          
+## ${answers.descriptionTitle}
+${answers.description}
+
+## Packages required to install this app
+${answers.packages}
+
+## Install process
+${answers.installProcess}
+
+## How this app should be used
+${answers.useCase}
+
+## This app falls under these license agreements
+${answers.license}
+
+## Additional contributors to this app
+${answers.contributorName}
+                
           `;
 };
 

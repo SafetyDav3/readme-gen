@@ -73,6 +73,9 @@ function init() {
   const readmeString = readmeTemplate(answers);
   console.log(readmeString)
 
+  writeToFile('README.md', answers)
+
+
  });
 }
 
