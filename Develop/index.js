@@ -55,7 +55,7 @@ const questionsArr = [
     type: "input",
     name: "tests",
     message: "Enter any Tests here: "
-  }
+  },
   {
     type: "checkbox",
     name: "license",
