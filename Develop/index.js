@@ -57,9 +57,9 @@ const questionsArr = [
     message: "Enter any Tests here: "
   },
   {
-    type: "checkbox",
+    type: "list",
     name: "license",
-    message: "What license(s) does this project fall under?: ",
+    message: "What license does this project fall under?: ",
     choices: [
       "MIT",
       "GPLv2",
