@@ -1,3 +1,5 @@
+
+          
 # README Generator
 
 ## Need a README.md fast?
@@ -17,11 +19,7 @@ Inquirer
 Clone the repo and make sure to have Node.js installed. Navigate to the folder in your terminal and then enter 'npm install' and then run 'node index.js'
 
 ## How this app should be used
-When coding and you want to generate a README.md document. 
-
-Video: 
-
-![Use](./Develop/assets/README-Use-Example.gif)
+When coding and you want to generate a README.md document.
 
 ## Tests
 None
