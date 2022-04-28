@@ -13,6 +13,16 @@ const { resolve } = require("path");
 const questionsArr = [
   {
     type: "input",
+    name: "userName",
+    message: "What is your Github username?: "
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "Please enter your email address: "
+  },
+  {
+    type: "input",
     name: "projectTitle",
     message: "What is the title of your project?: ",
   },
@@ -41,6 +51,11 @@ const questionsArr = [
     name: "useCase",
     message: "Describe a use case(s) where this project would be helpful: ",
   },
+  {
+    type: "input",
+    name: "tests",
+    message: "Enter any Tests here: "
+  }
   {
     type: "checkbox",
     name: "license",

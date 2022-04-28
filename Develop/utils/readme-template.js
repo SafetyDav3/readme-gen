@@ -22,15 +22,22 @@ ${answers.installProcess}
 ## How this app should be used
 ${answers.useCase}
 
+## Tests
+${answers.tests}
+
 ## This app falls under these license agreements
 ${answers.license}
 
 ## Additional contributors to this app
 ${answers.contributorName}
+
+## Questions?
+Contact ${answers.userName} at: ${answers.email}
+Or visit the Github of the creator: [${answers.userName}](https://github.com/${answers.userName})
                 
           `;
 };
 
 // readmeTemplate(answers);
 
-module.exports = readmeTemplate
+module.exports = readmeTemplate;
