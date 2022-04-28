@@ -1,10 +1,9 @@
-const readmeTemplate = function (answers) {
-  return `
-          
-# ${answers.projectTitle}
 
-## ${answers.descriptionTitle}
-${answers.description}
+          
+# README Generator
+
+## Need a README.md fast?
+Use this CLI README.md program to generate one fast!
 
 ## Table of contents
 - [Packages](#Packages-required-to-install-this-app)
@@ -14,23 +13,18 @@ ${answers.description}
 - [Contributors](#Additional-contributors-to-this-app)
 
 ## Packages required to install this app
-${answers.packages}
+Inquirer
 
 ## Install process
-${answers.installProcess}
+Clone the repo and make sure to have Node.js installed. Navigate to the folder in your terminal and then enter 'npm install' and then run 'node index.js'
 
 ## How this app should be used
-${answers.useCase}
+When coding and you want to generate a README.md document.
 
 ## This app falls under these license agreements
-${answers.license}
+MIT,Unlicense,Other
 
 ## Additional contributors to this app
-${answers.contributorName}
+SafteyDav3
                 
-          `;
-};
-
-// readmeTemplate(answers);
-
-module.exports = readmeTemplate
+          
