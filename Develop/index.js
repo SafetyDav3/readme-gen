@@ -6,6 +6,8 @@ const fs = require("fs");
 // const prompt = inquirer.createPromptModule();
 
 const readmeTemplate = require("./utils/readme-template");
+const { rejects } = require("assert");
+const { resolve } = require("path");
 
 // TODO: Create an array of questions for user input
 const questionsArr = [
@@ -64,19 +66,24 @@ const questionsArr = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(`../Develop/utils/${fileName}`, data, (err)=> {
+    if(err){
+      return console.log(err)
+    }
+    console.log('File created')
+  })
+  };
+
 
 // TODO: Create a function to initialize app
 function init() {
- inquirer.prompt(questionsArr).then(function (answers){
-  //  console.log(answers);
-  const readmeString = readmeTemplate(answers);
-  console.log(readmeString)
+  inquirer.prompt(questionsArr).then(function(answers) {
+    const readmeString = readmeTemplate(answers);
+    // console.log(readmeString);
 
-  writeToFile('README.md', answers)
-
-
- });
+    writeToFile("README.md", readmeString);
+  })
 }
 
 // Function call to initialize app
