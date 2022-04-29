@@ -2,6 +2,10 @@
           
 # README Generator
 
+## This app falls under these license agreements
+MIT
+More information can be found here: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Need a README.md fast?
 Use this CLI README.md program to generate one fast!
 
@@ -24,9 +28,6 @@ When coding and you want to generate a README.md document.
 ## Tests
 None
 
-## This app falls under these license agreements
-MIT
-More information can be found here: [MIT](https://opensource.org/licenses/MIT)
 
 ## Additional contributors to this app
 SafteyDav3

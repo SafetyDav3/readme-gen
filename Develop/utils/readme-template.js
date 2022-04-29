@@ -2,21 +2,21 @@ const readmeTemplate = function (answers) {
   let linLink = "";
 
   if (answers.license === "MIT") {
-    linLink = `[${answers.license}](https://opensource.org/licenses/MIT)`;
+    linLink = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
   } else if (answers.license === "GPLv2") {
-    linLink = `[${answers.license}](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)`;
+    linLink = `[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)`;
   } else if (answers.license === "GPLv3") {
-    linLink = `[${answers.license}](https://www.gnu.org/licenses/gpl-3.0.en.html)`;
+    linLink = `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)`;
   } else if (answers.license === "Apache") {
-    linLink = `[${answers.license}](https://www.apache.org/licenses/LICENSE-2.0)`;
+    linLink = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
   } else if (answers.license === "BSD 3-clause") {
-    linLink = `[${answers.license}](https://opensource.org/licenses/BSD-3-Clause)`;
+    linLink = `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`;
   } else if (answers.license === "BSD 2-clause") {
-    linLink = `[${answers.license}](https://opensource.org/licenses/BSD-2-Clause)`;
+    linLink = `[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)`;
   } else if (answers.license === "LGPLv3") {
-    linLink = `[${answers.license}](https://www.gnu.org/licenses/lgpl-3.0.en.html)`;
+    linLink = `[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)`;
   } else if (answers.license === "AGPLv3") {
-    linLink = `[${answers.license}](https://www.gnu.org/licenses/agpl-3.0.en.html)`;
+    linLink = `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)`;
   } else {
     linLink = answers.license;
   }
@@ -24,6 +24,10 @@ const readmeTemplate = function (answers) {
   return `
           
 # ${answers.projectTitle}
+
+## This app falls under these license agreements
+${answers.license}
+More information can be found here: ${linLink}
 
 ## ${answers.descriptionTitle}
 ${answers.description}
@@ -47,9 +51,6 @@ ${answers.useCase}
 ## Tests
 ${answers.tests}
 
-## This app falls under these license agreements
-${answers.license}
-More information can be found here: ${linLink}
 
 ## Additional contributors to this app
 ${answers.contributorName}
